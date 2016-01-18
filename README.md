@@ -40,23 +40,29 @@ So the system is consistent and correctly reports plane status and location
 I want to ensure a plane that has taken off from an airport is no longer in that airport
 ```
 
-Solution
+##Solution
 
-I solved this challenge creating 3 classes:
+##This challenge has 3 classes:
 
 Airport
 Plane
 Weather
-Airport class
+
+##Airport 
 
 
 initialize(put a number if the capacity is different than default) when you create an instance of airport you can specify a capacity otherwise it will be set to the constant DEFAULT_CAPACITY.
 
-planes it returns the array of planes stored in the airport. 
+'''planes''' it returns the array of planes stored in the airport. 
 
-land(plane) it instructs a plane to land at the airport if the airport is not full, the plane is flying, the weather is not stormy.
+'''land(plane)''' it instructs a plane to land at the airport if the airport is not full, the plane is flying, the weather is not stormy.
 
-take_off(plane) it instructs a plane to take off from the airport if the plane is at the airport and the weather is not stormy. 
-Plane class
+'''take_off(plane)''' it instructs a plane to take off from the airport if the plane is at the airport and the weather is not stormy. 
 
-stormy? it returns true 33% of times, false otherwise. It has been implemented with the Kernel method rand.
+#The Class Stormy return a stormy weather 30% of the time.
+
+#To use this app
+
+- Clone the repo
+- Bundle
+- Then inside Pry/Irb play with the methods above.
